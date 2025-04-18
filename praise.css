@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #033475;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: system-ui;
+    user-select: none;
+}
+button{
+    /* border: 1px solid red; */
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    background: none;
+    transition: box-shadow.5s;
+
+}
+#banner{
+    font-size: 300%;
+    font-weight: 700; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    letter-spacing: -5px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+#banner > p::first-letter{
+    color: rgb(238, 51, 51);
+}
+.tile{
+    font-size: 400%;
+    font-weight: 700;
+    border-radius: 7px;
+    padding :.5em;
+    border: 1px solid #03347511;
+}
+#word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5em auto 0;
+    padding: 1em 0;
+    gap: 1em;
+    position: relative;
+}
+#hint{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+#bulb{
+    height: 3em;
+    width: 3em;
+    /* border: 1px solid rgb(145, 102, 102); */
+    background-image: url(bulb-outline.svg);
+}
+#txt{
+    /* border: 1px solid #e35; */
+    font-size: 150%;
+    font-weight: 500;
+    font-family: monospace;
+}
+.chevron{
+    height: 5em;
+    width: 5em;  
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.chevron:hover{
+    box-shadow: 3px 3px 5px #ccc;
+}
+#backward{
+    background-image: url(chevron-back-outline.svg);
+    left: 4em;
+    background-size: 5em;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#forward{
+    background-image: url(chevron-forward-outline.svg);
+    background-size: 5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 4em;
+}
+#restartBtn{
+    height:4em ;
+    width: 4em ;
+    /* border: 1px solid red; */
+    box-shadow: none;
+    border-radius: none;
+    /* border: 1px solid blue; */
+    transition: box shado;
+    background-image: url(refresh-outline.svg);
+
+}
+#restartBtn:hover{
+    box-shadow: 3px 3px 5px gainsboro;
+}
+#hint{
+    width: 100%;
+    /* border: 1px solid red; */
+    border-radius: 7px;
+    
+}
+#action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 3em;
+    background-image:url(error_fawzi_mourad.gif);
+    background-size: 20%;
+    border-radius: 10em;
+    background-position : right;
+    background-repeat: no-repeat;
+}
+#CHECKBtn{
+    width: 10em;
+    height: 4em;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2em;
+    background-color: #6211a3;
+    padding-left: 1em;
+    margin-left: auto;
+}
+#CHECKBtn{
+    box-shadow: 4px 4px 3px gainsboro}
+
+#in{
+    flex: 1;
+   
+    color: white;
+
+}
+.lan {
+    width: 3rem;
+   
+    height: 3rem;
+    background-image: url('arrow-forward-outline.svg');
+    background-size: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #f9f9f9; 
+ 
+
+}
+#hintBtn{
+    width: 4em;
+    height: 4em;
+    background-image: url(help-circle-outline.svg);
+    background-size: 5em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#hintBtn:hover{
+    box-shadow: 4px 4px 3px gainsboro;
+}
+#cup{
+    height: 4em;
+    width: 4em;
+    background-image: url(trophy-outline.svg);   
+    position: relative;
+}
+#cup  > i{
+    position: absolute;
+    top :0;
+    right: 0;
+    border-radius: 5px;
+    background-color: #033475;
+    color: #fff;
+    padding: 3px 5px;
+}
+#cup:hover{
+    box-shadow: 3px 3px 5px #ccc;
+}
+/* to help changes to a new element*/
+#bulb,#cup,#checkBtn, #hintBtn,#restartBtn,#forward,#backward{
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+#footer{
+    background: #f9f9f9;
+    position: sticky;
+    top: 100%;
+    padding:2em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#author{
+    color: #555;
+}
+/*  responsive design*/
